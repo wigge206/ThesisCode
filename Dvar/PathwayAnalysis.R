@@ -1,3 +1,6 @@
+library(DOSE)
+library(clusterProfiler)
+library(illuminaHumanv2.db)
 ## Load data
 load("~/Projects/PhD/Bioinformatics/ExpressionAnalysis_listform.Rdata")
 
