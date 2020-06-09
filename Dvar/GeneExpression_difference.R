@@ -41,10 +41,8 @@ ExpVar.test <- function(data, classifier, p.adj = "BH"){
 ## comparison made
 # Basal vs non-basal
 # BRCA1 vs BRCAx
-# Basal-BRCA1 vs Basal-non-BRCA1 (will include BRCA2 mutation)
 # BRCA2 vs BRCAx
-# BRCA1/2 vs BRCAx
-# BRCA1 vs BRCA2
+
 
 load("Analysis_GEO/Expression_variation_WaddellData/Data/Geo_data/CompleteData.RData")
 rm(GSE19177_expr)
@@ -94,10 +92,8 @@ Waddell.brca1v2 = data.frame(GPL6106[match(rownames(Waddell.brca1v2), GPL6106$ID
 ## comparison made
 # Basal vs non-basal
 # BRCA1 vs BRCAx
-# Basal-BRCA1 vs Basal-non-BRCA1 (will include BRCA2 mutation)
 # BRCA2 vs BRCAx
-# BRCA1/2 vs BRCAx
-# BRCA1 vs BRCA2
+
 load("~/Projects/PhD/Bioinformatics/Analysis_GEO/Expression_variation_Nagel/Geo_data/CompleteData.RData")
 affy.entrez = as.list(hgu133plus2SYMBOL)
 #Nagel =  read.delim("~/Projects/Microarray data/Nagel/RMA_Nagel.txt", row.names =1)
@@ -161,13 +157,9 @@ colnames(Nagel.brca1vbrca2)[1] = "Gene.symbol"
 ## comparison made
 # Basal vs non-basal
 # BRCA1 vs BRCAx
-# Basal-BRCA1 vs Basal-non-BRCA1 (will include BRCA2 mutation, BRCAx and sporadic)
 # BRCA2 vs BRCAx
-# BRCA1/2 vs BRCAx
-# BRCA1 vs BRCA2
 # BRCA1 vs Sporadic
 # BRCA2 vs Sporadic
-# BRCA1/2 vs Sporadic
 
 ## Load either or both datasets
 load("Analysis_GEO/Expression_variation_Larsen/Geo_data/GSE49481/CompleteData.Rdata")
