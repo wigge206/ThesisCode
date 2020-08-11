@@ -15,6 +15,7 @@ wad.universal = unlist(ilmn.entrez[names(ilmn.entrez) %in% basal$Waddell.basal$I
 Lar.universal = as.character(Lar.probe$entrez) ## imported Lar probe from GEO
 nag.universal = unlist(entrez[names(entrez) %in% rownames(basal$Nagel.basal)])
 
+## Pathway enrichment for basal vs non-basal breast tumours
 basal.sig<-lapply(basal, function(i) i[i$lev.adj.p.value < 0.05,])
 
 
